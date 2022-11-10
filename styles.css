@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Fredoka+One&family=Sen&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Sen", sans-serif;
+  background-color: #2aace4;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#header-img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+}
+
+#nav-bar {
+  width: 50vw;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list a {
+  text-decoration: none;
+  color: #274085;
+  font-family: "Fredoka One", cursive;
+  padding: 10px;
+}
+
+.list a:hover {
+  background-color: #2aace4;
+  color: white;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container {
+  margin-top: 200px;
+  content: "";
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#hero h1 {
+  font-size: 3em;
+  font-family: "Courgette", cursive;
+  margin: 0 auto;
+}
+
+#hero h3 {
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+
+#hero .input-email {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 70%;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+input[type="email"] {
+  border: none;
+  border-radius: 5px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+input[type="submit"] {
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 10px auto 10px auto;
+  font-size: 15px;
+  background-color: white;
+  color: #274085;
+  font-family: "Fredoka One", cursive;
+}
+
+#submit:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #274085;
+  transition: 0.3s;
+}
+
+#feature {
+  color: white;
+  margin-top: 10px;
+  padding-top: 150px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+  justify-content: center;
+}
+
+.icon img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.icon {
+  margin-right: 30px;
+}
+
+.food {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 20px 0;
+}
+
+.food .text h3 {
+  margin: 10px auto 0 auto;
+  font-size: 2em;
+  font-family: "Fredoka One", cursive;
+}
+
+.food .text p {
+  margin: 10px auto 10px auto;
+  font-family: "Fredoka One", cursive;
+}
+
+#iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+iframe {
+  border-radius: 20px;
+}
+
+#pricing {
+  color: white;
+  padding-top: 150px;
+  margin: 20px 30px 300px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+  align-items: center;
+}
+
+#pricing .all-food {
+  box-shadow: inset 5px 5px 2px rgb(0, 0, 0), -5px -5px 2px rgb(0, 0, 0);
+}
+
+#pricing .all-food {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(80, 107, 189, 0.5);
+  font-family: "Fredoka One", cursive;
+  font-family: "Courgette", cursive;
+}
+
+@media only screen and (max-width: 768px) {
+  #header {
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+  }
+  #hero {
+    margin: 20px;
+    float: none;
+  }
+  #feature, #pricing{
+    color: white;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+  }
+  #pricing .all-food {
+    width: 50vw;
+  }
+  #iframe {
+    padding: 150px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #header {
+    width: 100%;
+  }
+  #nav-bar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+  }
+  #hero {
+    margin-bottom: 50px;
+  }
+  #feature, #pricing{
+    color: white;
+    margin-bottom: 100px;
+    margin-right: 30px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+  }
+  #pricing .all-food {
+    width: 50vw;
+  }
+  #iframe {
+    padding: 150px;
+  }
+}
